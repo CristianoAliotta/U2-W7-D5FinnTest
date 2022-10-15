@@ -1,0 +1,58 @@
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+
+nav {
+    background-color: ghostwhite;
+    box-shadow: 6px 6px 16px 5px darkgrey;
+    .navbar-brand {
+        font-size: 25px;
+        font-weight: 500;
+    }
+    img {
+        width: 110px;
+    }
+}
+
+#container {
+    background-color: ghostwhite;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.card {
+    margin: 1rem;
+    width: 18rem;
+    height: 25rem;
+    border-radius: 20px;
+    box-shadow: 6px 6px 16px 5px darkgrey;
+
+    .cardContainer {
+        height: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        img {
+        width: 70%;
+        height: 70%;
+        object-fit: contain;
+        }
+    }
+
+    .card-body {
+        height: 20%;
+        text-align: center;
+        margin: 0;
+        font-size: 17px;
+        font-weight: 500;
+    }
+}
+
+footer {
+    margin: 0px;
+    background-color: ghostwhite;
+    padding: 2rem 0;
+    box-shadow: 6px 6px 16px 5px darkgrey;
+    address {
+        font-weight: 500;
+    }
+}
