@@ -5,6 +5,7 @@
  * Copyright 2011-2022 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -10771,57 +10772,38 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+body {
+  background-color: #E10600;
+  font-family: "Righteous", cursive;
+}
+
 nav {
   background-color: ghostwhite;
-  box-shadow: 6px 6px 16px 5px darkgrey;
+  box-shadow: 6px 6px 16px 5px rgb(0, 0, 0);
 }
 nav .navbar-brand {
   font-size: 25px;
   font-weight: 500;
 }
 nav img {
-  width: 110px;
+  width: 80px;
+  margin-right: 15px;
 }
 
 #container {
-  background-color: ghostwhite;
+  background-color: rgb(255, 255, 255);
   margin-top: 5rem;
   margin-bottom: 5rem;
-}
-
-.card {
-  margin: 1rem;
-  width: 18rem;
-  height: 25rem;
-  border-radius: 20px;
-  box-shadow: 6px 6px 16px 5px darkgrey;
-}
-.card .cardContainer {
-  height: 80%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0;
-}
-.card .cardContainer img {
-  width: 70%;
-  height: 70%;
-  object-fit: contain;
-}
-.card .card-body {
-  height: 20%;
-  text-align: center;
-  margin: 0;
-  font-size: 17px;
-  font-weight: 500;
+  box-shadow: 5px 5px 15px 5px rgb(0, 0, 0);
 }
 
 footer {
   margin: 0px;
   background-color: ghostwhite;
-  padding: 2rem 0;
-  box-shadow: 6px 6px 16px 5px darkgrey;
+  box-shadow: 6px 6px 16px 5px rgb(0, 0, 0);
 }
-footer address {
-  font-weight: 500;
+
+.dIcon {
+  width: 24px;
+  height: 24px;
 }

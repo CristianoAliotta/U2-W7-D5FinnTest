@@ -1,22 +1,18 @@
-async function displayLidia() {
-  let apiDisney = await fetch("http://ergast.com/api/f1/circuits.json");
-  let disneyObject = await apiDisney.json();
-  let arrayDisney = disneyObject.data;
-  console.log(arrayDisney);
-  for (const disneyCard of arrayDisney) {
-    document.getElementById("container").innerHTML += `<div class="card">
-        <div class="cardContainer">
-        <img src=${disneyCard.imageUrl} class="card-img-top" alt="..." />
-        </div>
-        <div class="card-body">
-          <p class="card-text">
-            ${disneyCard.name}
-          </p>
-        </div>
-      </div>`;
+async function displayDrivers() {
+  let apiDrivers = await fetch("http://ergast.com/api/f1/drivers.json?limit=150");
+  let driversObject = await apiDrivers.json();
+  let arrayDrivers = driversObject.MRData.DriverTable.Drivers;
+  for (const driverLicense of arrayDrivers) {
+    document.getElementById("container").innerHTML += `<tr>
+    <th scope="row"><img class="dIcon" src="./assets/images/driver.png" alt="driver" /></i></th>
+    <td>${driverLicense.givenName}</td>
+    <td>${driverLicense.familyName}</td>
+    <td>${driverLicense.nationality}</td>
+    <td><a class="text-danger" target="_blank" href="${driverLicense.url}"><img class="dIcon" src="./assets/images/book.png" alt=""></a></td>
+  </tr>`;
   }
 }
 
 window.onload = async () => {
-  await displayLidia();
+  await displayDrivers();
 };
